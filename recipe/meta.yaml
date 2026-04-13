@@ -14,7 +14,6 @@ source:
 build:
   noarch: generic
   number: 1000
-  skip: true  # [win32]
 
 requirements:
   run:
@@ -22,8 +21,7 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('NMF')"           # [not win]
-    - "\"%R%\" -e \"library('NMF')\""  # [win]
+    - $R -e "library('NMF')"
 
 about:
   home: http://renozao.github.io/NMF
