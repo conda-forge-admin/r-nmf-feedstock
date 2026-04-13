@@ -1,5 +1,5 @@
-About r-nmf-feedstock
-=====================
+About _r-nmf-feedstock
+======================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nmf-feedstock/blob/main/LICENSE.txt)
 
@@ -26,53 +26,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-r--nmf-green.svg)](https://anaconda.org/conda-forge/r-nmf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-nmf.svg)](https://anaconda.org/conda-forge/r-nmf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-nmf.svg)](https://anaconda.org/conda-forge/r-nmf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-nmf.svg)](https://anaconda.org/conda-forge/r-nmf) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-__r--nmf-green.svg)](https://anaconda.org/conda-forge/_r-nmf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/_r-nmf.svg)](https://anaconda.org/conda-forge/_r-nmf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/_r-nmf.svg)](https://anaconda.org/conda-forge/_r-nmf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/_r-nmf.svg)](https://anaconda.org/conda-forge/_r-nmf) |
 
-Installing r-nmf
-================
+Installing _r-nmf
+=================
 
-Installing `r-nmf` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `_r-nmf` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-nmf` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `_r-nmf` can be installed with `conda`:
 
 ```
-conda install r-nmf
-```
-
-or with `mamba`:
-
-```
-mamba install r-nmf
-```
-
-It is possible to list all of the versions of `r-nmf` available on your platform with `conda`:
-
-```
-conda search r-nmf --channel conda-forge
+conda install _r-nmf
 ```
 
 or with `mamba`:
 
 ```
-mamba search r-nmf --channel conda-forge
+mamba install _r-nmf
+```
+
+It is possible to list all of the versions of `_r-nmf` available on your platform with `conda`:
+
+```
+conda search _r-nmf --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search _r-nmf --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search r-nmf --channel conda-forge
+mamba repoquery search _r-nmf --channel conda-forge
 
-# List packages depending on `r-nmf`:
-mamba repoquery whoneeds r-nmf --channel conda-forge
+# List packages depending on `_r-nmf`:
+mamba repoquery whoneeds _r-nmf --channel conda-forge
 
-# List dependencies of `r-nmf`:
-mamba repoquery depends r-nmf --channel conda-forge
+# List dependencies of `_r-nmf`:
+mamba repoquery depends _r-nmf --channel conda-forge
 ```
 
 
@@ -117,17 +117,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating r-nmf-feedstock
-========================
+Updating _r-nmf-feedstock
+=========================
 
-If you would like to improve the r-nmf recipe or build a new
+If you would like to improve the _r-nmf recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/r-nmf-feedstock are
+Note that all branches in the conda-forge/_r-nmf-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
