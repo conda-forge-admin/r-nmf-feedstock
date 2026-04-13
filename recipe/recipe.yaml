@@ -16,13 +16,13 @@ build:
   number: 1000
 
 requirements:
-  ignore_run_exports:
-    from_package:
-      - r-base
-  host:
-    - r-base
+  # ignore_run_exports:
+  #   from_package:
+  #     - r-base
+  # host:
+  #   - r-base
   run:
-    - r-base
+    # - r-base
     - bioconda::r-nmf ==${{ version }}
 
 tests:
