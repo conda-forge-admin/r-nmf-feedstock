@@ -23,7 +23,7 @@ requirements:
   #   - r-base
   run:
     # - r-base
-    - bioconda::r-nmf ==${{ version }}
+    - bioconda::r-metacoder ==${{ version }}
 
 tests:
   - script:
