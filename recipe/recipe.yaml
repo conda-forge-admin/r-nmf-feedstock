@@ -19,7 +19,7 @@ requirements:
   run:
     - bioconda::r-nmf ==${{ version }}
 
-test:
+tests:
   - script:
       - $R -e "library('NMF')"
 
