@@ -41,8 +41,7 @@ about:
   license_file: 
     # - ${{ env.get("PREFIX", default="NOT_A_PATH") }}/lib/R/share/licenses/GPL-2
     # - ${{ env.get("PREFIX", default="NOT_A_PATH") }}/lib/R/share/licenses/GPL-3
-    - https://cran.r-project.org/web/licenses/GPL-2
-    - https://cran.r-project.org/web/licenses/GPL-3
+    - GPL-2-3
 
 extra:
   recipe-maintainers:
