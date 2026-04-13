@@ -35,8 +35,8 @@ about:
     an easy way of performing parallel computations on multicore machines.
   license_family: GPL3
   license_file: 
-    - ${{ env.get("PREFIX", "NOT_A_PATH") }}/lib/R/share/licenses/GPL-2
-    - ${{ env.get("PREFIX", "NOT_A_PATH") }}/lib/R/share/licenses/GPL-3
+    - ${{ env.get("PREFIX", default="NOT_A_PATH") }}/lib/R/share/licenses/GPL-2
+    - ${{ env.get("PREFIX", default="NOT_A_PATH") }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
