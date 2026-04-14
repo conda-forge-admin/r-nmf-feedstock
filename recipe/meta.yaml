@@ -26,6 +26,7 @@ requirements:
 
 test:
   commands:
+    - env
     - $R -e "library('NMF')"
   requires:
     - r-base
