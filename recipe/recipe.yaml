@@ -16,18 +16,12 @@ build:
   number: 1000
 
 requirements:
-  # ignore_run_exports:
-  #   from_package:
-  #     - r-base
-  # host:
-  #   - r-base
   run:
-    # - r-base
     - bioconda::r-metacoder
 
 tests:
   - script:
-      - $R -e "library('NMF')"
+      - R -e "library('METACODER')"
 
 about:
   homepage: http://renozao.github.io/NMF
@@ -38,7 +32,7 @@ about:
     algorithms have been optimized in C++, and the main interface function provides
     an easy way of performing parallel computations on multicore machines.
   license_family: GPL3
-  license_file: 
+  license_file:
     # - ${{ env.get("PREFIX", default="NOT_A_PATH") }}/lib/R/share/licenses/GPL-2
     # - ${{ env.get("PREFIX", default="NOT_A_PATH") }}/lib/R/share/licenses/GPL-3
     - GPL-2-3

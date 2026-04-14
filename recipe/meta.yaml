@@ -1,7 +1,7 @@
 {% set version = "0.21.0" %}
 
 package:
-  name: _r-nmf
+  name: r-nmf
   version: {{ version|replace("-", "_") }}
 
 source:
@@ -15,20 +15,12 @@ build:
   number: 1000
 
 requirements:
-  # ignore_run_exports:
-  #   from_package:
-  #     - r-base
-  # host:
-  #   - r-base
   run:
-    # - r-base
     - bioconda::r-metacoder
 
 test:
   commands:
-    - R -e "library('NMF')"
-  requires:
-    - r-base
+    - R -e "library('METACODER')"
 
 about:
   home: http://renozao.github.io/NMF
