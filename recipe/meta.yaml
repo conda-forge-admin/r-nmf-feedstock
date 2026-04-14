@@ -21,15 +21,13 @@ requirements:
   # host:
   #   - r-base
   run:
-    # - r-base
+    - r-base
     - bioconda::r-metacoder
 
 test:
   commands:
     - env
     - $R -e "library('NMF')"
-  requires:
-    - r-base
 
 about:
   home: http://renozao.github.io/NMF
