@@ -22,8 +22,14 @@ jobs:
       max-parallel: 50
       matrix:
         include:
-          - CONFIG: linux_64_
-            SHORT_CONFIG: linux_64_
+          - CONFIG: linux_64_r_base4.4
+            SHORT_CONFIG: linux_64_r_base4.4
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+          - CONFIG: linux_64_r_base4.5
+            SHORT_CONFIG: linux_64_r_base4.5
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
