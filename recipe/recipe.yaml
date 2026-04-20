@@ -17,7 +17,7 @@ build:
 
 requirements:
   run:
-    - bioconda::r-metacoder
+    - bioconda::r-dwls
 
 tests:
   - script:
