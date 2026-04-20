@@ -1,5 +1,5 @@
-channel_sources:
-- conda-forge,bioconda
+# channel_sources:
+# - conda-forge,bioconda
 channel_targets:
 - conda-forge main
 cran_mirror:
