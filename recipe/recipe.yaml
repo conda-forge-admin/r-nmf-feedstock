@@ -17,7 +17,7 @@ build:
 
 requirements:
   run:
-    - bioconda::r-dwls
+    - r-dwls[channel='bioconda']
 
 tests:
   - script:
