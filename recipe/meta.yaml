@@ -16,11 +16,11 @@ build:
 
 requirements:
   run:
-    - bioconda::r-metacoder
+    - bioconda::r-nmf
 
 test:
   commands:
-    - R -e "library('METACODER')"
+    - R -e "library('NMF')"
 
 about:
   home: http://renozao.github.io/NMF
