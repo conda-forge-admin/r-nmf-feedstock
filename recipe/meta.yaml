@@ -1,7 +1,7 @@
 {% set version = "0.21.0" %}
 
 package:
-  name: r-nmf
+  name: _r-nmf
   version: {{ version|replace("-", "_") }}
 
 source:
@@ -16,7 +16,7 @@ build:
 
 requirements:
   run:
-    - bioconda::r-nmf
+    - r-nmf[version={{ version }},channel=bioconda]
 
 test:
   commands:
